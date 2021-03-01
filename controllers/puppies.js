@@ -9,7 +9,8 @@ module.exports = {
 }
 
 //ASYNC/AWAIT
-async function index (req, res, next) {
+/*
+async function index(req, res, next) {
     try {
         let puppies = Puppy.find({});
         res.status(200).json(puppies)
@@ -17,6 +18,7 @@ async function index (req, res, next) {
         next(err);
     }
 }
+*/
 
 function index(req, res, next) {
     //CALLBACKS
@@ -35,7 +37,8 @@ function index(req, res, next) {
 }
 
 //ASYNC/AWAIT
-async function show (req, res, next) {
+/*
+async function show(req, res, next) {
     try {
         let puppy = await Puppy.findById(req.params.id);
         res.status(200).json(puppy);
@@ -43,6 +46,7 @@ async function show (req, res, next) {
         next(err);
     }
 }
+*/
 
 function show(req, res, next) {
     //CALLBACKS
@@ -64,7 +68,8 @@ function show(req, res, next) {
 }
 
 //ASYNC/AWAIT
-async function update(req, res, next) {
+/*
+async function create(req, res, next) {
     try {
         let puppy = await Puppy.create(req.body);
         res.status(201).json(puppy);
@@ -72,6 +77,7 @@ async function update(req, res, next) {
         next(err);
     }
 }
+*/
 
 
 function create(req, res, next) {
@@ -94,6 +100,7 @@ function create(req, res, next) {
 }
 
 //ASYNC/AWAIT
+/*
 async function update(req, res, next) {
     try {
         let puppy = await Puppy.findByIdAndUpdate(req.params.id, req.body, {new: true});
@@ -102,6 +109,7 @@ async function update(req, res, next) {
         next(err);
     }
 }
+*/
 
 function update(req, res, next) {
     //CALLBACKS
@@ -125,7 +133,8 @@ function update(req, res, next) {
 }
 
 //ASYNC/AWAIT
-async function remove (req, res, next) {
+/*
+async function remove(req, res, next) {
     try {
         let puppy = Puppy.findByIdAndRemove(req.params.id);
         res.status(200).json(puppy);
@@ -133,6 +142,7 @@ async function remove (req, res, next) {
         next(err);
     }
 }
+*/
 
 function remove(req, res, next) {
     //CALLBACKS
